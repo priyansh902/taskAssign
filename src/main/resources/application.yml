@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/assigntask?createDatabaseIfNotExist=true
+    username: root
+    password: 
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+
+jwt:
+  secret: "n1c5R2ZlK7m4k9B+vP4x8UeYk8Q4dFJmLk8u9p2Zr3As"
+  expiration: 86400000 # 1 day
+
